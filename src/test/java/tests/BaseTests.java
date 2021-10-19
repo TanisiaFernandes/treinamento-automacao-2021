@@ -2,17 +2,19 @@ package tests;
 
 import org.junit.After;
 import org.junit.Before;
-import utils.Browser;
-import utils.Utils;
+import Utils.Browser;
+import Utils.Utils;
 
 public class BaseTests {
+
     @Before
-    public void setup(){
+    public void setup() {
         Browser.loadPage(Utils.getBaseUrl());
     }
 
     @After
-    public void tearDown(){
+    public void tearDown() {
+        Browser.print();
         Browser.close();
     }
 }
