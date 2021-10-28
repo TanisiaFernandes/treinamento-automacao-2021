@@ -1,7 +1,7 @@
-package utils;
+package Utils;
 
 public class Utils {
-    public static String getBaseUrl(){
+    public static String getBaseUrl() {
         return "http://automationpractice.com/";
     }
 }
